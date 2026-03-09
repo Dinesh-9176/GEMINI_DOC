@@ -6,7 +6,7 @@ This repository contains practical examples for the **Text Generation** capabili
 
 ### 1. Clone the Repository
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/Dinesh-9176/GEMINI_DOC.git
 cd GEMINI_QUICK_START
 ```
 
@@ -17,7 +17,7 @@ GEMINI_API_KEY=your_api_key_here
 ```
 
 ### 3. Install Packages
-This project uses `uv` for lightning-fast dependency management. To install the required packages (`google-genai`, `logging`, `pillow`, `python-dotenv`), run:
+This project uses `uv` for dependency management. To install the required packages (`google-genai`, `logging`, `pillow`, `python-dotenv`), run:
 ```bash
 uv sync
 ```
