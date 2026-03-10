@@ -8,8 +8,12 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 logger = logging.getLogger(__name__)
 
 load_dotenv()
+
+
 client = genai.Client()
 logger.info("Generating content")
+
+
 prompt = "What is the sum of the first 50 prime numbers?"
 response = client.models.generate_content(
   model="gemini-3-flash-preview",

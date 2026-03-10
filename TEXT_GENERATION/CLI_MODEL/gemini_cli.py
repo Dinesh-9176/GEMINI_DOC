@@ -71,9 +71,9 @@ while True:
                 contents=["Describe this image", img]
             )
 
-            logger.info("\nGemini:", response.text)
+            logger.info(f"\nGemini: {response.text}")
         except Exception as e:
-            logger.info("\n[API Error]: {e}")
+            logger.error(f"\n[API Error]: {e}")
 
     
     elif choice == "3":
@@ -84,7 +84,7 @@ while True:
             continue
 
         try:
-            response = client.models.generate_content(
+            response = client.models.generate_content_stream(
                 model="gemini-3-flash-preview",
                 contents=q,
                 config=types.GenerateContentConfig(
@@ -94,6 +94,7 @@ while True:
                 )
             )
 
-            logger.info("\nGemini:", response.text)
+            for chunk in response:
+                logger.info(chunk.text)
         except Exception as e:
-            logger.info("\n[API Error]: {e}")
+            logger.error(f"\n[API Error]: {e}")

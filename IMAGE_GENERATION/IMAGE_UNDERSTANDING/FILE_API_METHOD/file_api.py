@@ -1,23 +1,21 @@
 import os
-from dotenv import load_dotenv
-from PIL import Image
 from google import genai
+from dotenv import load_dotenv
 import logging
 
-load_dotenv()
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
 
-logger.info("Creating client")
+load_dotenv()
+
 client = genai.Client()
 
-logger.info("Opening image")
-image = Image.open(r"")
+my_file = client.files.upload(file=r"C:\Users\dines\OneDrive\Desktop\GEMINI_QUICK_START\Schematic.jpeg")
 
-logger.info("Generating content")
 response = client.models.generate_content(
     model="gemini-3-flash-preview",
-    contents=[image, "Tell me about this image"]
+    contents=[my_file, "Caption this image."],
 )
+
 logger.info(response.text)

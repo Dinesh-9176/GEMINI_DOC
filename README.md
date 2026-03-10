@@ -36,3 +36,10 @@ uv run TEXT_GENERATION/CLI_MODEL/gemini_cli.py
   - `STREAMING/`: Examples for receiving responses in real-time chunks.
   - `SYSTEM_INSTRUCTION/`: Examples for setting system-level behavior guidelines for the model.
   - `THINKING/`: Examples for utilizing the model's built-in reasoning and thinking capabilities.
+
+- `IMAGE_GENERATION/`
+  - `CONTEXT_CACHING/`: Examples of using context caching to efficiently process large inputs.
+  - `FUNCTION_CALLING/`: Examples of using function calling to interact with external tools.
+  - `IMAGE_GENERATION/`: Examples of generating images from text prompts using Gemini models.
+  - `IMAGE_UNDERSTANDING/`: Examples of extracting information and understanding images using vision models.
+  - `STRUCTURED_OUTPUT/`: Examples of enforcing structured outputs (like JSON) from the model.
