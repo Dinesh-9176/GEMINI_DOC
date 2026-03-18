@@ -10,6 +10,7 @@ load_dotenv()
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
+
 client = genai.Client()
 logger.info("Generating content")
 response = client.models.generate_content_stream(
