@@ -29,17 +29,33 @@ uv run TEXT_GENERATION/CLI_MODEL/gemini_cli.py
 
 ## Folder Structure
 
-- `TEXT_GENERATION/`
-  - `CLI_MODEL/`: Interactive console application combining chat, vision, and reasoning capabilities.
-  - `MULTIMODAL/`: Examples for generating text from multimodal inputs (text + images).
-  - `MULTI_TURN/`: Examples for maintaining conversation history for chat interactions.
-  - `STREAMING/`: Examples for receiving responses in real-time chunks.
-  - `SYSTEM_INSTRUCTION/`: Examples for setting system-level behavior guidelines for the model.
-  - `THINKING/`: Examples for utilizing the model's built-in reasoning and thinking capabilities.
+- **[AGENT_DEVELOPMENT_KIT](file:///c:/Users/dines/OneDrive/Desktop/GEMINI_QUICK_START/AGENT_DEVELOPMENT_KIT/)**: Advanced multi-agent frameworks, MCP integration, and OpenAPI tools.
+  - `LOOP_AGENT/`, `PARALLEL_AGENT/`, `SEQUENTIAL_AGENT/`: Multi-agent orchestration patterns.
+  - `MCP_TOOLS/`, `CUSTOM_MCP_TOOLS/`: Model Context Protocol integrations.
+  - `OPENAPI/`, `AUTHENTICATION/`: REST API integration and security examples.
 
-- `IMAGE_GENERATION/`
-  - `CONTEXT_CACHING/`: Examples of using context caching to efficiently process large inputs.
-  - `FUNCTION_CALLING/`: Examples of using function calling to interact with external tools.
-  - `IMAGE_GENERATION/`: Examples of generating images from text prompts using Gemini models.
-  - `IMAGE_UNDERSTANDING/`: Examples of extracting information and understanding images using vision models.
-  - `STRUCTURED_OUTPUT/`: Examples of enforcing structured outputs (like JSON) from the model.
+- **[TEXT_GENERATION](file:///c:/Users/dines/OneDrive/Desktop/GEMINI_QUICK_START/TEXT_GENERATION/)**: Core Gemini text capabilities.
+  - `CLI_MODEL/`: Interactive console application.
+  - `MULTIMODAL/`: Text and vision combining examples.
+  - `MULTI_TURN/`: Chat history and conversation persistence.
+  - `STREAMING/`: Real-time response generation.
+  - `THINKING/`: Utilizing built-in model reasoning.
+
+- **[IMAGE_GENERATION](file:///c:/Users/dines/OneDrive/Desktop/GEMINI_QUICK_START/IMAGE_GENERATION/)**: Image creation and analysis.
+  - `IMAGE_GENERATION/`: Generating images from text.
+  - `IMAGE_UNDERSTANDING/`: Vision analysis (Object Detection, Segmentation).
+  - `STRUCTURED_OUTPUT/`: Enforcing JSON responses from vision models.
+
+- **[AUDIO_GENERATION](file:///c:/Users/dines/OneDrive/Desktop/GEMINI_QUICK_START/AUDIO_GENERATION/)**: Speech synthesis and audio processing.
+  - `SINGLE_SPEAKER/`, `MULTI_SPEAKER/`: Generating audio with one or more voices.
+
+- **[LIVE_API](file:///c:/Users/dines/OneDrive/Desktop/GEMINI_QUICK_START/LIVE_API/)**: Real-time interaction with low-latency Gemini models.
+  - `GROUNDING/`, `SESSION_MANAGEMENT/`, `WEBSOCKETS/`: Advanced live session features.
+
+- **[FASTAPI](file:///c:/Users/dines/OneDrive/Desktop/GEMINI_QUICK_START/FASTAPI/)**: Implementing RESTful APIs with FastAPI.
+  - `GET/`, `POST/`, `PUT/`, `DELETE/`: Standard HTTP methods examples.
+
+- **[PYDANTIC](file:///c:/Users/dines/OneDrive/Desktop/GEMINI_QUICK_START/PYDANTIC/)**: Data modeling and validation using Pydantic.
+  - `BASIC/`, `GENERIC_MODEL/`, `NESTED_MODEL/`, `VALIDATION_ERROR/`: Comprehensive schema examples.
+
+- **[OLLAMA](file:///c:/Users/dines/OneDrive/Desktop/GEMINI_QUICK_START/OLLAMA/)**: Running local LLMs (like Qwen) and integrating them with ADK.
